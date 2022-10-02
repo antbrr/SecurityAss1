@@ -5,8 +5,8 @@ def genSk():
     return random.randint(1, 9999)
 
 
-def genPk(base, sk):
-    return pow(base, sk) % p
+def genPk(base, exponent):
+    return pow(base, exponent) % p
 
 
 def bruteforce(pk):
