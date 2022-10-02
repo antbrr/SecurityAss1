@@ -18,7 +18,7 @@ def bruteforce(pk):
 
 
 def encrypt(m, pkRec):
-    r = random.randint(1, 9999)
+    r = genSk()
     c1 = pow(g, r)
     c2 = int(genPk(pkRec, r) * m)
     return c1, c2
