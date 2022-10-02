@@ -31,8 +31,8 @@ def decrypt(c1, c2, skRec):
 
 g = 666  # Shared base
 p = 6661  # Share prime
-bobPK = 2227  # Bobs public key
-aliceSK = genSk()  # Alice secret key
+bobPK = 2227
+aliceSK = genSk()
 alicePK = genPk(aliceSK, g)
 mallorySK = genSk()
 malloryPK = genPk(g, mallorySK)
